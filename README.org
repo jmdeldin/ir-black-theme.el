@@ -1,0 +1,3 @@
+#+TITLE:       Emacs 24 ir-black theme
+
+See the commentary in [[file:ir-black-theme.el]] for installation instructions.
