@@ -1,4 +1,4 @@
-;;; ir-black-theme.el --- Dark
+;;; ir-black-theme.el --- Port of ir-black theme
 
 ;; Copyright (C) 2012  Jon-Michael Deldin
 
@@ -71,12 +71,13 @@
    `(bold ((t (:bold t))))
    `(button ((t (:foreground, *keywords* :underline t))))
    `(default ((t (:background, *background-color* :foreground, *normal*))))
+   `(header-line ((t (:background, *mode-line-bg* :foreground, *normal*)))) ;; info header
+   `(highlight ((t (:background, *current-line*))))
+   `(highlight-face ((t (:background, *current-line*))))
    `(hl-line ((t (:background, *current-line* :underline t))))
    `(info-xref ((t (:foreground, *keywords* :underline t))))
    `(region ((t (:background, *visual-selection*))))
    `(underline ((nil (:underline t))))
-   `(highlight ((t (:background, *current-line*))))
-   `(highlight-face ((t (:background, *current-line*))))
 
    ;; font-lock
    `(font-lock-builtin-face ((t (:foreground, *operators*))))
@@ -99,13 +100,12 @@
 
    ;; GUI
    `(fringe ((t (:background, *background-color*))))
-   `(header-line ((t (:background, *mode-line-bg* :foreground, *normal*)))) ;; info header
    `(linum ((t (:background, *line-number*))))
    `(minibuffer-prompt ((t (:foreground, *variable*))))
    `(mode-line ((t (:background, *mode-line-bg* :foreground, *mode-line-fg*))))
    `(mode-line-inactive ((t (:background, *mode-line-bg* :foreground, *background-color*))))
-   `(vertical-border ((t (:foreground, *background-color*)))) ;; between splits
    `(text-cursor ((t (:background, *cursor-underscore*))))
+   `(vertical-border ((t (:foreground, *background-color*)))) ;; between splits
 
    ;; show-paren
    `(show-paren-mismatch ((t (:background, *red* :foreground, *normal* :weight bold))))
@@ -117,10 +117,10 @@
    `(lazy-higlight ((t (:background, *operators*))))
 
    ;; org-mode
-   `(org-link ((t (:foreground, *keywords* :underline t))))
    `(org-date ((t (:foreground, *light-purple* :underline t))))
    `(org-level-1 ((t (:foreground, *string*))))
-   `(org-special-keyword ((t (:foreground, *variable*))))))
+   `(org-special-keyword ((t (:foreground, *variable*))))
+   `(org-link ((t (:foreground, *keywords* :underline t))))))
 
 ;; Local Variables:
 ;; no-byte-compile: t
