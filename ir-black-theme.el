@@ -120,7 +120,9 @@
    `(org-date ((t (:foreground, *light-purple* :underline t))))
    `(org-level-1 ((t (:foreground, *string*))))
    `(org-special-keyword ((t (:foreground, *variable*))))
-   `(org-link ((t (:foreground, *keywords* :underline t))))))
+   `(org-link ((t (:foreground, *keywords* :underline t))))
+   `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))))
+
 
 ;; Local Variables:
 ;; no-byte-compile: t
