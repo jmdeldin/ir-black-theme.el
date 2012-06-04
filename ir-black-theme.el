@@ -120,6 +120,7 @@
    ;; magit
    `(magit-diff-add ((t (:foreground, *string*))))
    `(magit-diff-del ((t (:foreground, *red*))))
+
    ;; org-mode
    `(org-date ((t (:foreground, *light-purple* :underline t))))
    `(org-level-1 ((t (:foreground, *string*))))
