@@ -35,6 +35,12 @@
 ;; Once you have reloaded your configuration (`eval-buffer'), do `M-x
 ;; load-theme' and select "ir-black".
 
+;;; Credits:
+
+;; Thanks to Bozhidar Batsov for pointers and the autoloader from his
+;; solarized theme at URL
+;; `https://github.com/bbatsov/solarized-emacs/blob/master/solarized-theme.el'.
+
 ;;; Code:
 
 (deftheme ir-black "Port of ir-black theme")
@@ -129,6 +135,10 @@
    `(org-checkbox ((t (:foreground, *keywords* :background, *background-color* :bold t))))
    `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))))
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 ;; Local Variables:
 ;; no-byte-compile: t
