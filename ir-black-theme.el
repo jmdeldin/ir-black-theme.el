@@ -125,6 +125,7 @@
    `(org-level-1 ((t (:foreground, *string*))))
    `(org-special-keyword ((t (:foreground, *variable*))))
    `(org-link ((t (:foreground, *keywords* :underline t))))
+   `(org-checkbox ((t (:foreground, *keywords* :background, *background-color* :bold t))))
    `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))))
 
 
