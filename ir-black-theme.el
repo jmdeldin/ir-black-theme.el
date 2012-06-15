@@ -121,7 +121,7 @@
    ;; search
    `(isearch ((t (:background, *regexp-alternate* :foreground, *search-selection*))))
    `(isearch-fail ((t (:background, *red*))))
-   `(lazy-higlight ((t (:background, *operators*))))
+   `(lazy-highlight ((t (:background, *operators* :foreground, *search-selection*))))
 
    ;; magit
    `(magit-diff-add ((t (:foreground, *string*))))
