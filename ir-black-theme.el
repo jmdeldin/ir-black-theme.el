@@ -78,6 +78,7 @@
    `(bold ((t (:bold t))))
    `(button ((t (:foreground, *keywords* :underline t))))
    `(default ((t (:background, *background-color* :foreground, *normal*))))
+   `(escape-glyph ((t (:foreground, *string-inner*))))
    `(header-line ((t (:background, *mode-line-bg* :foreground, *normal*)))) ;; info header
    `(highlight ((t (:background, *current-line*))))
    `(highlight-face ((t (:background, *current-line*))))
@@ -96,6 +97,7 @@
    `(font-lock-function-name-face ((t (:foreground, *method-declaration*))))
    `(font-lock-keyword-face ((t (:foreground, *keywords*))))
    `(font-lock-negation-char-face ((t (:foreground, *red*))))
+   `(font-lock-number-face ((t (:foreground, *number*))))
    `(font-lock-preprocessor-face ((t (:foreground, *keywords*))))
    `(font-lock-reference-face ((t (:foreground, *constant*))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground, *regexp*))))
@@ -111,6 +113,7 @@
    `(minibuffer-prompt ((t (:foreground, *variable*))))
    `(mode-line ((t (:background, *mode-line-bg* :foreground, *mode-line-fg*))))
    `(mode-line-inactive ((t (:background, *mode-line-bg* :foreground, *background-color*))))
+   `(cursor ((t (:background, *cursor-underscore*))))
    `(text-cursor ((t (:background, *cursor-underscore*))))
    `(vertical-border ((t (:foreground, *background-color*)))) ;; between splits
 
@@ -133,7 +136,10 @@
    `(org-special-keyword ((t (:foreground, *variable*))))
    `(org-link ((t (:foreground, *keywords* :underline t))))
    `(org-checkbox ((t (:foreground, *keywords* :background, *background-color* :bold t))))
-   `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))))
+   `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))
+
+   ;; starter kit
+   `(esk-paren-face ((t (:foreground, *string-inner*))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
