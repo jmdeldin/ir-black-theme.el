@@ -50,7 +50,6 @@
       (*comments*           "#7C7C7C")
       (*constant*           "#99CC99")
       (*current-line*       "#151515")
-      (*cursor-block*       "#FFFFFFF")
       (*cursor-underscore*  "#FFFAAA")
       (*keywords*           "#96CBFE")
       (*light-purple*       "#FFCCFF")
