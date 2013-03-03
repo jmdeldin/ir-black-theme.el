@@ -12,6 +12,14 @@ The easiest way is to install it through [MELPA](http://melpa.milkbox.net/) with
 `M-x package-install RET ir-black-theme`. Otherwise, see the commentary in 
 `ir-black-theme.el` for manual installation instructions.
 
+## Usage
+
+After installing it:
+
+1. `M-x load-theme RET ir-black`
+2. Don't like it? Type `M-x disable-theme RET ir-black` to restore your
+   previous theme.
+
 ## Contributing
 
 Please feel free to file an issue for more face definitions -- I'd like this
